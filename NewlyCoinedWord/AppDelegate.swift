@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  NewlyCoinedWord
+//  newlyCoinedWord
 //
-//  Created by Y on 2022/07/11.
+//  Created by Y on 2022/07/09.
 //
 
 import UIKit
@@ -13,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        sleep(3)
         // Override point for customization after application launch.
         return true
     }
