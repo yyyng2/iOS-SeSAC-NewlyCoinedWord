@@ -34,9 +34,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
     
-    lazy var dicCount: Int = newlyCoinedWordDictionary.count
-    // lazy 넣었더니 해결됨, 이유 찾아볼 것
-    
     func designTagButton(){
         
         var result: [String] = []
@@ -58,9 +55,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
   
     
     func endSearchTextField(){
-        var trimTextField = searchTextField.text?.trimmingCharacters(in: .whitespaces)
+        let trimTextField = searchTextField.text?.trimmingCharacters(in: .whitespaces)
 
-        var resultText = newlyCoinedWordDictionary[trimTextField!]
+        let resultText = newlyCoinedWordDictionary[trimTextField!]
         
         
         
@@ -106,9 +103,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         view.endEditing(true)
         searchTextField.endEditing(true)
         
-        var buttonTitle = sender.title(for: .normal)
-        var trimTitle = buttonTitle!.trimmingCharacters(in: .whitespaces)
-        var resultDicionary = newlyCoinedWordDictionary[trimTitle]
+        let buttonTitle = sender.title(for: .normal)
+        let trimTitle = buttonTitle!.trimmingCharacters(in: .whitespaces)
+        let resultDicionary = newlyCoinedWordDictionary[trimTitle]
         
         resultLabel.text = resultDicionary!
         
